@@ -140,7 +140,7 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 .contentInfo:last-child{padding-bottom: 0 !important}
 .contentInfo p{margin-bottom: 10px}
 .contentInfo p.colorBody{margin-bottom: 5px}
-.contentInfo ul {margin: 0 -10px}
+.contentInfo ul {margin: 0 -10px; padding-bottom: 5px}
 .contentInfo ul li {
     margin: 0 10px;
     float: left;
