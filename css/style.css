@@ -137,6 +137,7 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
     position: relative;
     padding-bottom: 25px;
 }
+.contentInfo:last-child{padding-bottom: 0 !important}
 .contentInfo p{margin-bottom: 10px}
 .contentInfo p.colorBody{margin-bottom: 5px}
 .contentInfo ul {margin: 0 -10px}
@@ -172,7 +173,6 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 	content: "";
 	background-color: #999999;
 }
-.contentInfo:last-child{padding-bottom: 0}
 .contentInfo.withIcon:last-child::after {display: none}
 .contentInfo.withIcon {padding-left: 40px}
 .contentInfo h3 {
