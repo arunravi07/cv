@@ -132,7 +132,7 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
     font-weight: 600
 }
 /* new styles */
-.contentRows {padding: 18px 0 }
+.contentRows {padding: 20px 0 }
 .contentInfo {
     position: relative;
     padding-bottom: 25px;
