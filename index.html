@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Arun Ravi | UI Developer</title>
+	<title>Arun Ravi | React | UI Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -23,7 +23,7 @@
 				<div class="profile textCenter">
 					<div class="profPic"><img src="images/arun-ravi.png" alt="Arun Ravi" /></div>
 					<h1>ARUN RAVI</h1>
-					<h2 class="colorPrimary">UI DEVELOPER</h2>
+					<h2 class="colorPrimary">ReactJS/UI DEVELOPER</h2>
 					<div class="social">
 						<a href="https://www.linkedin.com/in/arunravi7" target="_blank" title="Arun Ravi | LinkedIn">
 							<i class="la la-linkedin"></i>
@@ -43,7 +43,7 @@
 							<li>
 								<i class="la la-shield"></i>
 								<span>Experience</span>
-								<h4>4.5 Years</h4>
+								<h4 class="experience">5.8 Years</h4>
 							</li>
 							<li>
 								<i class="la la-graduation-cap"></i>
@@ -183,15 +183,20 @@
 				<div class="contentRows" id="summary">
 					<h2 class="headSect">Summary</h2>
 					<div class="contentInfo">
-						<p>My Name is Arun Ravi, a Versatile UI Developer with 4+ years of experience building high performing user interfaces with reusable components, and performance optimization. I have high-level proficiency in HTML, CSS, jQuery, JavaScript, React JS, and AMP. I am very familiar and experienced in developing UI for projects on Laravel and CodeIgniter and have worked with a good number of successful development teams. I believe I gain the most satisfaction at work when I am challenged, have the opportunity to learn and develop and meet the organization’s goals and customer expectations. </p>
+						<p>My Name is Arun Ravi, a Versatile UI Developer with <span class="experience">5+ years</span> of experience building high performing user interfaces with reusable components, and performance optimization. I have high-level proficiency in HTML, CSS, jQuery, JavaScript, React JS, and AMP. I am very familiar and experienced in developing UI for projects on Laravel and CodeIgniter and have worked with a good number of successful development teams. I believe I gain the most satisfaction at work when I am challenged, have the opportunity to learn and develop and meet the organization’s goals and customer expectations. </p>
 					</div>
 				</div>
 				<div class="contentRows" id="experience">
 					<h2 class="headSect">Experience</h2>
 					<div class="contentInfo withIcon">
-						<h3>UI Developer <span>at</span> <a href="#">Agrima InfoTech India Pvt. Ltd.</a></h3>
+						<h3>Senior Engineer <span>at</span> <a href="#">QBurst Technologies Pvt. Ltd.</a></h3>
+						<p>Working on ReactJS to create UI components, workflows, and web applications.</p>
+						<p>10/2019 - present</p>
+					</div>
+					<div class="contentInfo withIcon">
+						<h3>Software Engineer <span>at</span> <a href="http://agrimainfotech.com/">Agrima InfoTech India Pvt. Ltd.</a></h3>
 						<p>Developed User Interfaces for projects on Laravel and CodeIgniter. Started career on React JS and successfully completed projects on React JS. I got chances to study and implement page speed optimization, SEO friendly HTML development, and the AMP version of the websites.</p>
-						<p>08/2017 - present</p>
+						<p>08/2017 - 10/2019</p>
 					</div>
 					<div class="contentInfo withIcon">
 						<h3>Frontend Developer <span>at</span> <a href="http://octopix.net/" target="_blank">Octopix Animations</a></h3>
@@ -498,6 +503,16 @@
 			$('#status').fadeOut();
 			$('#preLoader').delay(300).fadeOut('slow');
 		});
+		function calcExp() {
+			const startDate = new Date("20 Apr 2015");
+			const endDate = new Date();
+			let months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
+			months -= startDate.getMonth();
+			months += endDate.getMonth();
+			const years = Math.round(months*10/12)/10;
+			return years <= 0 ? 0 : years;
+		}
+		$(".experience").html(calcExp()+ ' Years')
 		// easeScroll
 		$("html").easeScroll();
 	</script>
