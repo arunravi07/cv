@@ -26,10 +26,10 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 .colorBody{color:#888888}
 .colorPrimary{color: #31afd8}
 .contents {margin: 0 auto; max-width: 1200px; border: 15px solid #fff; background-color: #dcddde; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2)}
-.contents .proColLeft{-ms-flex: 0 0 350px; flex: 0 0 350px; max-width: 350px; -webkit-box-flex: 0; padding: 30px; color: #636467}
+.contents .proColLeft{-ms-flex: 0 0 350px; flex: 0 0 350px; max-width: 350px; -webkit-box-flex: 0; padding: 40px; color: #636467}
 .proColLeft a{color: #636467}
 .proColLeft a:hover{color: #31afd8}
-.contents .proColRight{-ms-flex: 0 0 calc(100% - 350px); flex: 0 0 calc(100% - 350px); max-width: calc(100% - 350px); -webkit-box-flex: 0; padding: 30px; color: #dcddde}
+.contents .proColRight{-ms-flex: 0 0 calc(100% - 350px); flex: 0 0 calc(100% - 350px); max-width: calc(100% - 350px); -webkit-box-flex: 0; padding: 40px; color: #dcddde}
 .contents .proColRight h1, .contents .proColRight h2, .contents .proColRight h3, .contents .proColRight h4, .contents .proColRight h5,.contents .proColRight h6 {color: #fff}
 .contents .proColLeft h1, .contents .proColLeft h2, .contents .proColLeft h3, .contents .proColLeft h4, .contents .proColLeft h5,.contents .proColLeft h6 {color: #636467}
 .profDet {background-color: #636467; color: #fff}
@@ -54,15 +54,15 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 .profileRow .profile >h2 {font-weight: 400;margin-bottom: 20px;}
 .profileRow .profile p i,.profileRow .profile p span{display: inline-block; vertical-align: middle}
 .profileRow .profile p i {font-size: 18px; margin-right: 5px }
-.profileRow .profile p {margin-bottom: 10px; font-weight: 600}
+.profileRow .profile p {margin-bottom: 30px; font-weight: 600}
 /* new styles */
-.contentRows {padding: 20px 0 }
-.contentInfo {position: relative; padding-bottom: 25px;}
+.contentRows + .contentRows {padding-top: 40px }
+.contentInfo {position: relative; padding-bottom: 30px;}
 .contentInfo:last-child{padding-bottom: 0 !important}
 .contentInfo p{margin-bottom: 10px}
 .contentInfo p.colorBody{margin-bottom: 5px}
 .contentInfo ul {margin: 0 -10px; padding-bottom: 5px}
-.contentInfo ul li {margin: 0 0 0 30px; list-style: disc}
+.contentInfo ul li {margin: 0 0 6px 30px; list-style: disc}
 .contentInfo *:last-child{margin-bottom: 0 !important}
 .contentInfo.withIcon::before {position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border: 2px solid #999999; content: ""; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; z-index: 99; background-color: #636467;}
 .contentInfo.withIcon::after {position: absolute; left: 7px; top: 5px; width: 2px; height: 100%; content: ""; background-color: #999999;}
@@ -74,7 +74,7 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 .contentInfo h3 a:hover{color: #31afd8}
 .academics p {margin-bottom: 5px}
 .timePeriod {font-size: 13px;}
-.projects + .projects {margin-top: 10px;}
+.projects {margin-top: 15px;}
 /* new styles */
 
 .progressRow {padding-bottom: 20px}
@@ -86,7 +86,7 @@ a * {-mos-transition: all linear 0.2s; -ms-transition: all linear 0.2s; -o-trans
 .progressRow .progressBar span {border-radius: 8px; display: block; width: 25px; border: 1px solid #31afd8; height: 8px;}
 .progressRow .progressBar span.filled {background-color: #31afd8;}
 /* Job Overview */
-.profOverView {margin-top: 30px;}
+.profOverView {margin: 40px 0;}
 .profOverView ul li {position: relative; padding-left: 35px; margin: 0px 0px 15px;}
 .profOverView ul li h4 {font-size: 15px; font-weight: 600; margin-bottom: 0; font-family:"Open Sans", sans-serif; letter-spacing: .1px}
 .profOverView ul li span {display: block; color: #636467}
